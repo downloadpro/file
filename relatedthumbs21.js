@@ -21,7 +21,7 @@ thumburl[relatedTitlesNum]=d;} else thumburl[relatedTitlesNum]='http://1.bp.blog
 
 }
 
-if(relatedTitles[relatedTitlesNum].length>55) relatedTitles[relatedTitlesNum]=relatedTitles[relatedTitlesNum].substring(0, 55)+"...";
+if(relatedTitles[relatedTitlesNum].length>45) relatedTitles[relatedTitlesNum]=relatedTitles[relatedTitlesNum].substring(0, 45)+"...";
 for (var k = 0; k < entry.link.length; k++) {
 if (entry.link[k].rel == 'alternate') {
 relatedUrls[relatedTitlesNum] = entry.link[k].href;
@@ -77,7 +77,7 @@ var i = 0;
 
 if(relatedTitles.length>0) document.write('<h2>'+relatedpoststitle+'</h2>');
 document.write('<div style="clear: both;"/>');
-while (i < relatedTitles.length && i < 50 && i<maxresults) {
+while (i < relatedTitles.length && i < 45 && i<maxresults) {
 
 
 document.write('<a style="text-decoration:none;padding:5px;float:right;');
